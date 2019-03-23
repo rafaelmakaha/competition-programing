@@ -1,0 +1,5 @@
+# C 
+*.out
+
+# VSCode
+.vscode
