@@ -18,6 +18,23 @@ Print "YES" without the quotes, if the letters in the pile could be permuted to 
 '''
 
 def main():
-    
+    a = [x for x in input()]
+    b = [x for x in input()]
+    c = [x for x in input()]
+    flag = 0
+    for i in range(len(a)):
+        if a[i] in c:
+            c.pop(c.index(a[i]))
+        else:
+            flag = 1
+    for i in range(len(b)):
+        if b[i] in c:
+            c.pop(c.index(b[i]))
+        else:
+            flag = 1
+    if len(c) > 0 or flag == 1:
+        print('NO')
+    else:
+        print('YES')
 
 main()
