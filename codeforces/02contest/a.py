@@ -43,8 +43,8 @@ def isPrime(n):
     return True
 
 def havePrimesBetween(n,m):
-    i=n
-    while i < sqrt(m):
+    i=n+1
+    while i < m:
         if isPrime(i):
             return True
         i = i + 1
