@@ -1,5 +1,6 @@
 # C 
 *.out
+*prog
 
 # VSCode
 .vscode
