@@ -6,7 +6,17 @@ int main(){
     string st,aux;
     int i=0,p=0,a=1;
     vector<string> ans;
+    
     cin >> st;
+
+    if (strcmp(st, "x")){
+        cout << "Comando 1: (x)1" << endl;
+        return 0;
+    }
+    if (strcmp(st,"ox")){
+        cout << "Comando 1: (ox)1" << endl;
+        return 0;
+    }
 
     while(i <= st.length()){
         if(st[i] == 'x'){
